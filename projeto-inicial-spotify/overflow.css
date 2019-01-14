@@ -1,0 +1,7 @@
+.item {
+	width: 200px;
+	height: 200px;
+	border: 2px solid black;
+	/*overflow: scroll; /*para o scroll mesmo que não precise de barra de relagem ela será demostrada na tela */
+    overflow: auto;/* irá exibir a barra de rolagem somente se for necessária*/
+}

@@ -1,0 +1,19 @@
+/*************Sombras******************/
+
+#box{
+	width:400px;
+	height:400px;
+	margin:50px auto;
+	padding:8px;
+	background: #009670;
+	/*box-shadow: 10px 10px 10px 15px black; /*o ultimo valor espalha a sombra*/
+	box-shadow: 10px 10px 10px 15px black, -10px -10px -10px 15px red;
+	-webkit-box-shadow: 10px 10px 10px 15px black, -10px -10px 10px 15px green; /*sombra não ocupa espaço, fica apenas como background*/
+}
+
+#box h1{
+	color: white;
+	font-size: 60px;
+	/*text-shadow: 10px 10px  10px black; /*o terceiro valor define o borrado*/
+	text-shadow: 10px 10px rgba(0,0,0,0.2); /*é possível utilizar o rgba para dar transparencia/*
+}

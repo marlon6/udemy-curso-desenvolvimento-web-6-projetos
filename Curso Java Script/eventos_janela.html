@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Eventos - Janela</title>
+
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+
+		//onload ( irpa ser ativado após o carregamento da págin)
+		//onresize ( permite capturar o redimencionamento da página)
+
+		let a = 0;
+		function mudar (){
+			document.getElementById('texto').innerHTML = `Página redimenssionada ${a+=1} vezes(es)`;
+		}
+	</script>
+		
+
+</head>
+
+
+<!--body onload="alert('a página foi totalmente carregada')"-->
+<body onload="alert('Página carregada =] ')" onresize="mudar(), console.log('página sofreu resize')">  <!--foi aplicado onresize e onload-->
+
+	para o onresize irá aparecer mensagem no console do navegador (control Shift i)
+	<p id="texto"></p>
+	
+</body>
+</html>

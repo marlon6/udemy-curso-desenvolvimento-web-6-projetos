@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Eventos - Formularios</title>
+	<script src="jquery-3.3.1.slim.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready( function(){
+
+		//focus
+		//blur - elemento perdeu o foco
+		//change
+
+		$('#campo1').focus(function(){
+			alert('Elemento foi focado!');
+			console.log('Elemento foi focado!');
+		})
+
+		$('#campo2').blur(function(){
+			alert('Elemento perdeu o foco!');
+			console.log('Elemento perdeu o foco!');
+		})
+
+		$('#campo3').change(function(){
+			alert('The object was changed!');
+			console.log('The object was changed!');
+		})
+
+		});
+		
+	</script>
+
+</head>
+<body>
+	<input type="text" id="campo1" placeholder="focus">
+	<input type="text" id="campo2" placeholder="blur">
+	<select id="campo3">
+		<option value="1">first option</option>
+		<option value="2">second option</option>
+	</select>
+</body>
+</html>

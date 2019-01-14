@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Posicionamento</title>
+		<meta charset="utf-8" />
+
+
+		<style type="text/css">
+
+			body{
+				background: #61bd8c;
+
+			}
+
+			#conteudo-principal{
+				background: #FFFFFF;
+				padding: 10px;
+				width: 600px;
+				height:900px;
+				margin: 30px auto;
+				/*position: relative;*/
+				margin-top: 120px;
+			}
+
+			.caixa{
+				background: #1e6f44;
+				width: 100px;
+				height: 100px;
+				color: #ffffff;
+
+			}
+
+			#relativo{
+				position:relative;
+				left: -30px;
+				top:0;
+				width: 660px;
+			}
+
+			#absoluta{
+				position: absolute; /*A posição "absolute" se movimenta com relação ao body( porém se na div que está acima dela(div principal) ela será movimentada, não mais ao body, mas a div que está acima(div mãe). */
+				bottom:0;
+				right:265px;
+
+
+			}
+
+			#fixo{
+				position:fixed; /*parecido com o absolue, porém não fica aposicionada referente ao seu parente mais próximo. Fica possicionado referente a viwer do browser. Se movimentar a barra de rolagem da pagina o que foi marcado como fixed permanece na mesma posição da tela. Ideal para criação de menu no top*/
+				top: 0;
+				left:0;
+				width: 100%;
+				background:#000;
+
+			}
+		
+		</style>
+	</head>
+
+
+	<body>
+		<div id="conteudo-principal">
+			<h1>Posicionamento<h1>
+
+			<h4> Relative<h4>
+			<div id="relativo" class="caixa">Relative</div>
+
+			<h4> Absolute<h4>
+			<div id="absoluta" class="caixa">Absolute</div>
+
+			<h4> Fixed<h4>
+			<div  id="fixo" class="caixa">Fixa</div>
+
+			
+
+		</div>
+	</body>
+</html>

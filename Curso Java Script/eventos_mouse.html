@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Funções</title>
+
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+
+		function msgOnclick(){
+			alert('Onclick ao soltar o mose')
+		}
+
+		function msgOndblclick(){
+			alert('ondblclick duplo clique');
+		}
+		var a = 0;
+		function msgOnmouseover(){
+			document.getElementById('over').innerHTML = `mouse sobre ${a+=1} veze(s)`
+		}
+		function msgOnmoseout(){
+			alert('onmouseout ao sair o mouse!!')
+		}
+		function msgOnmousedown(){
+			alert('onmousedown clicou e apareci antes que você soltasse o botão do mouse.');
+		}
+
+		var b = 0;
+
+		function msgOnmouseenter(){
+			document.getElementById('enter').innerHTML = `Entrou ${b+=1} veze(s)`;
+		}
+
+	
+
+	</script>
+		
+
+</head>
+
+<body>
+
+	<div onclick="msgOnclick()" style="background-color: #ccc; width: 100%; height: 100px;">ao soltar o mouse após o clique</div>
+
+	<div ondblclick="msgOndblclick()" style=" margin-top: 3px; background-color: #ccf; width: 100%; height: 100px;">Duplo click</div>
+
+	<div onmouseover="msgOnmouseover()" style=" background-color: #cfc; width: 100px; margin-top: 3px; "><p id="over">onmouseover ao passar o mouse</p><p>Considera a primeira entrada na div e depois, dentro da div, somente o parágrado que está o id</p></div>
+
+	<div onmouseout="msgOnmoseout()" style="background-color: #fcc; float: right; width: 100px; height:100px;">Ao tirar o mouse</div>
+	<div onmousedown="msgOnmousedown()" style="background-color: #cff; width: 100px; height: 150px; margin-top: 4px; margin-left: 204px;">onmousedown pega no click antes de soltar</div>
+	<dir onmouseenter="msgOnmouseenter()" style="background-color: #ffc; width: 100px; height: 100px; float: left; margin: 4px;"><p id="enter">onmouseenter</p><p>considera a div mesmo o id estando no parágrafo</p></dir>
+
+	<div></div>
+</body>
+</html>

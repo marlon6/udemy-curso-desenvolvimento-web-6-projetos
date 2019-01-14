@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Eventos - Teclado</title>
+	<script src="jquery-3.3.1.slim.js"></script>
+	<script type="text/javascript">
+
+		$(document).ready( function(){
+
+			// keydwon - ao pressiomar qualquer tecla
+			// keypress - ao pressionar qualquer tecla caractere
+			// keyup -  ao soltar qualquer tecla
+
+			$('#campo1').keypress(function(){
+				alert('Botão foi pressionado');
+			})
+
+		});
+		
+	</script>
+
+</head>
+<body>
+	<input type="text" id="campo1">
+</body>
+</html>
